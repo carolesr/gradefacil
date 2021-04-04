@@ -1,0 +1,62 @@
+[
+	{
+		"IdCurso" : "6067903564c43b0c4ce98c0e",
+		"NomeDisciplina":"Amplificadores", 
+		"CodigoDisciplina": "EL66E",
+		"NumAulas": 8,
+		"Turmas": [
+			{ 
+				"CodigoTurma": "S11",
+				"Professor": "Joaquim Miguel Maia",
+				"Horario": ["2T6-Q101", "2N1-Q101", "2N2-Q101", "2N3-Q101", "2N4-Q101", "2N5-Q101", "4T4-Q302", "475-Q302"],
+				"VagasTotal": 44,
+				"VagasCalouro": 0,
+				"Reserva": "Fechada",
+				"PrioridadeCurso": [ "1 -Engenharia Industrial Eletrônica", "2 -Engenharia Eletrônica", "2 - Engenharia Elétrica", "2 - Engenharia de Controle/Automação", "3 - Engenharia de Computação"]
+			}
+		]
+	},
+	{
+		"IdCurso" : "6067903564c43b0c4ce98c0e",
+		"NomeDisciplina":"Fundamentos De Programação 1", 
+		"CodigoDisciplina": "CSF13",
+		"NumAulas": 6,
+		"Turmas": [
+			{ 
+				"CodigoTurma": "S71",
+				"Professor": "Leyza Elmeri Baldo Dorini",
+				"Horario": ["2M4-B201", "2M5-B201", "2M6-B201", "4M4-B201", "4M5-B201", "4M6-B201"],
+				"VagasTotal": 65,
+				"VagasCalouro": 46,
+				"Reserva": "Aberta",
+				"PrioridadeCurso": ["1 -Engenharia de Computação"]
+			},
+			{ 
+				"CodigoTurma": "S72",
+				"Professor": "Bogdan Tomoyuki Nassu",
+				"Horario": ["2M4-B201", "2M5-B201", "2M6-B201", "4M4-B201", "4M5-B201", "4M6-B201"],
+				"VagasTotal": 28,
+				"VagasCalouro": 0,
+				"Reserva": "Sem Reserva",
+				"PrioridadeCurso": ""
+			}
+		]
+	},
+	{
+		"IdCurso" : "6067903564c43b0c4ce98c10",
+		"NomeDisciplina":"Amplificadores", 
+		"CodigoDisciplina": "EL66E",
+		"NumAulas": 8,
+		"Turmas": [
+			{ 
+				"CodigoTurma": "S11",
+				"Professor": "Joaquim Miguel Maia",
+				"Horario": ["2T6-Q101", "2N1-Q101", "2N2-Q101", "2N3-Q101", "2N4-Q101", "2N5-Q101", "4T4-Q302", "475-Q302"],
+				"VagasTotal": 44,
+				"VagasCalouro": 0,
+				"Reserva": "Fechada",
+				"PrioridadeCurso": [ "1 -Engenharia Industrial Eletrônica", "2 -Engenharia Eletrônica", "2 - Engenharia Elétrica", "2 - Engenharia de Controle/Automação", "3 - Engenharia de Computação"]
+			}
+		]
+	}
+]
