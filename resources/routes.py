@@ -3,7 +3,7 @@ from resources.service import *
 
 controller = Blueprint('controller', __name__)
 
-@controllelr.route('/')
+@controller.route('/')
 def index():
     return jsonify({'hello': 'world'})
 
