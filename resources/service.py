@@ -4,7 +4,7 @@ def get_all_cursos():
     cursos = get_cursos()
     listResult = []
     for c in cursos:
-        obj = {'guid': str(c['_id']), 'Id': c['IdCurso'], 'NomeCurso':c['NomeCurso']}
+        obj = {'Id': c['IdCurso'], 'NomeCurso':c['NomeCurso']}
         listResult.append(obj)
     return listResult
 
@@ -12,8 +12,7 @@ def get_all_disciplinas_by_curso(id):
     disciplinas = get_disciplinas_by_curso(id)
     listResult = []
     for d in disciplinas:
-        obj = {
-            'guid': str(d['_id']), 
+        obj = { 
             'IdCurso': d['IdCurso'],
             'NomeDisciplina': d['NomeDisciplina'],
             'CodigoDisciplina': d['CodigoDisciplina'],
@@ -32,8 +31,7 @@ def get_grades(data):
 
     listFinal = []
     for d in disciplinas:
-        obj = {
-            'guid': str(d['_id']), 
+        obj = { 
             'IdCurso': d['IdCurso'],
             'NomeDisciplina': d['NomeDisciplina'],
             'CodigoDisciplina': d['CodigoDisciplina'],
