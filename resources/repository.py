@@ -10,9 +10,7 @@ def get_cursos():
     return result
 
 def get_disciplinas_by_curso(id):
-    id1 = '6067903564c43b0c4ce98c0e'
-    id2 = '6067903564c43b0c4ce98c10'
-    result = tb_disciplinas.find({'IdCurso': { "$in": [id1, id2]}})
+    result = tb_disciplinas.find({'IdCurso': id})
     return result
 
 def get_turmas_by_curso_and_disc(idcurso, listDisc):
