@@ -4,6 +4,7 @@
 		"NomeDisciplina":"Amplificadores", 
 		"CodigoDisciplina": "EL66E",
 		"NumAulas": 8,
+		"Semestre": "2020/2",
 		"Turmas": [
 			{ 
 				"CodigoTurma": "S11",
@@ -21,6 +22,7 @@
 		"NomeDisciplina":"Fundamentos De Programação 1", 
 		"CodigoDisciplina": "CSF13",
 		"NumAulas": 6,
+		"Semestre": "2020/2",
 		"Turmas": [
 			{ 
 				"CodigoTurma": "S71",
@@ -47,6 +49,7 @@
 		"NomeDisciplina":"Amplificadores", 
 		"CodigoDisciplina": "EL66E",
 		"NumAulas": 8,
+		"Semestre": "2020/2",
 		"Turmas": [
 			{ 
 				"CodigoTurma": "S11",

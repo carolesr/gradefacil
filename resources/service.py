@@ -4,7 +4,7 @@ def get_all_cursos():
     cursos = get_cursos()
     listResult = []
     for c in cursos:
-        obj = {'guid': str(c['_id']), 'Id': c['Id'], 'NomeCurso':c['NomeCurso']}
+        obj = {'guid': str(c['_id']), 'Id': c['IdCurso'], 'NomeCurso':c['NomeCurso']}
         listResult.append(obj)
     return listResult
 
