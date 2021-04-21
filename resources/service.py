@@ -11,30 +11,36 @@ def get_all_cursos():
 
 def get_all_disciplinas_by_curso(id):
     disciplinas = get_disciplinas_by_curso(id)
-    listResult = []
+
+    dict_final = {}
     for d in disciplinas:
-        listTurmas = []
+
+        dict_turmas = {}
         for t in d['Turmas']:
-            obj_turma = {
-                t['CodigoTurma']: {
+            dict_turmas[t['CodigoTurma']] = {
                     'prof': t['Professor'],
                     'horarios_str': ", ".join(t['Horario']),
-                    'horarios': [s.split('-')[0] for s in t['Horario']],
-                    'salas': [s.split('-')[1] for s in t['Horario']]
+                    #'horarios': [s.split('-')[0] for s in t['Horario']],
+                    #'salas': [s.split('-')[1] for s in t['Horario']]
                 }
-            }
-            listTurmas.append(obj_turma)
-        obj_disc = { 
-            d['CodigoDisciplina']: {
-                'IdCurso': d['IdCurso'],
+
+        dict_final[d['CodigoDisciplina']] = {
+                #'idcurso': d['IdCurso'],
                 'nome': d['NomeDisciplina'],
                 'aulas': d['NumAulas'],
-                'turmas': listTurmas
+                'turmas': dict_turmas
             }
-        }
-        listResult.append(obj_disc)
 
-    return listResult
+    dict_ordered =  sorted(dict_final.items(), key=lambda x: x[1]['nome'])
+
+    return dict_ordered
+
+
+def montar_grades(obj):
+    print(obj)
+    size = len(obj)
+    for i in range(size):
+        print(obj[i])
 
 def get_grades(data):
     idcurso = data['idCurso']
@@ -50,8 +56,9 @@ def get_grades(data):
             'NomeDisciplina': d['NomeDisciplina'],
             'CodigoDisciplina': d['CodigoDisciplina'],
             'NumAulas': d['NumAulas'],
-            'Turmas': [t for t in d['Turmas'] if t['CodigoTurma'] in dictTurmas[d['CodigoDisciplina']]]  #d['Turmas']
+            'Turmas': [t for t in d['Turmas'] if t['CodigoTurma'] in dictTurmas[d['CodigoDisciplina']]]
         }
         listFinal.append(obj)
 
+    montar_grades(listFinal)
     return listFinal
